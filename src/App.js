@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import StateComponent from './examples/State';
+
+import EffectComponent from './examples/Effect';
+
+import ContextComponent from './examples/Context';
+
+import ReducerComponent from './examples/Reducer';
+
+import MemoComponent from './examples/Memo';
+
+import RefComponent from './examples/Ref';
+
+import LayoutEffectComponent from './examples/LayoutEffect';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{ textAlign: 'center' }}>React Hooks</h1>
+      <StateComponent />
+      <hr />
+      <EffectComponent />
+      <hr />
+      <ContextComponent />
+      <hr />
+      <ReducerComponent />
+      <hr />
+      <MemoComponent />
+      <hr />
+      <RefComponent />
+      <hr />
+      <LayoutEffectComponent />
     </div>
   );
 }
