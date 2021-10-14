@@ -23,11 +23,15 @@ const LevelTwo = (props) => (
     <div>
         <h2>second level</h2>
         <LevelThree user={props.user} setAuthentication={props.setAuthentication} />
+
     </div>);
 
 const LevelThree = (props) => (
     <div>
-        <h3>third level</h3>
+        <span>
+            <h3>third level</h3>
+            <p>props -> {JSON.stringify(props)}</p>
+        </span>
         <LevelFour user={props.user} setAuthentication={props.setAuthentication} />
     </div>);
 
