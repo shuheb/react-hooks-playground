@@ -7,8 +7,8 @@ import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 function useDynamicCallback(callback) {
     const ref = useRef()
-    ref.current = callback
-    return useCallback((...args) => ref.current.apply(this, args), [])
+    ref.current = callback;
+    return useCallback((...params) => ref.current.apply(this, params), [])
 }
 
 const WithRefHookComponent = () => {
